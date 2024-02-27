@@ -43,8 +43,9 @@ void Operazioni_Finanziarie::Versamento(string fonte,double importo) {
 
 void Operazioni_Finanziarie::Prelievo(double importo) {
     double nuovo_saldo=0;
-    if(importo>0 && importo<=client.getSaldo()){
-        nuovo_saldo=client.getSaldo()-importo;
+    if(importo>0 || importo<=client.getSaldo()){
+        nuovo_saldo=client.getSaldo() - importo;
+        client.setSaldo(nuovo_saldo);
         ofstream file("Prelievo.txt");
         if(file.is_open()){
             file<<"Prelievo del cliente:"<<client.getName()<<" "<<client.getSurname()<<endl;

@@ -8,7 +8,7 @@ using namespace std;
 
 class Client {
 public:
-    Client(string nome,string cognome,int eta,int nr_conto,double saldo=0) : name(nome),surname(cognome),age(eta),saldo(saldo),
+    Client(string nome="Nome",string cognome="Cognome",int eta=18,int nr_conto=0,double saldo=0) : name(nome),surname(cognome),age(eta),saldo(saldo),
     conto(nr_conto){
         if(age<18){
             cerr<<"L'eta del cliente deve essere maggiore o uguale a 18 anni"<<endl;
