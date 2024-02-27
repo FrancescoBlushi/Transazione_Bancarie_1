@@ -19,8 +19,7 @@ public:
     }
     void creaFile()const ;
     void readFile(string& nomeFile) const;
-private:
-    string name;
+
 public:
     const string &getName() const;
 
@@ -31,6 +30,19 @@ public:
     double getSaldo() const;
 
     int getConto() const;
+
+private:
+    string name;
+public:
+    void setName(const string &name);
+
+    void setSurname(const string &surname);
+
+    void setAge(int age);
+
+    void setSaldo(double saldo);
+
+    void setConto(int conto);
 
 private:
     string surname;

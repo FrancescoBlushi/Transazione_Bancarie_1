@@ -53,3 +53,23 @@ double Client::getSaldo() const {
 int Client::getConto() const {
     return conto;
 }
+
+void Client::setName(const string &name) {
+    Client::name = name;
+}
+
+void Client::setSurname(const string &surname) {
+    Client::surname = surname;
+}
+
+void Client::setAge(int age) {
+    Client::age = age;
+}
+
+void Client::setSaldo(double saldo) {
+    Client::saldo = saldo;
+}
+
+void Client::setConto(int conto) {
+    Client::conto = conto;
+}

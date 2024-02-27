@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 11)
 add_subdirectory(test)
 
 add_executable(Transazione_Bancarie main.cpp)
-set(SOURCE_FILE Client.cpp Client.h)
+set(SOURCE_FILE Client.cpp Client.h Operazioni_Finanziarie.cpp Operazioni_Finanziarie.h)
 add_library(core ${SOURCE_FILE})
 target_link_libraries(Transazione_Bancarie core)
