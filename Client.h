@@ -18,7 +18,7 @@ public:
 
     }
     void creaFile()const ;
-    void readFile(string& nomeFile) const;
+    void readFile(string nomeFile) const;
 
 public:
     const string &getName() const;

@@ -12,7 +12,7 @@ void Operazioni_Finanziarie::Bonifico(string Destinatario, int numero_conto, dou
             file<<"Mittente: "<<client.getName()<<client.getSurname()<<endl;
             file<<"Destinatario:"<<Destinatario<<endl;
             file<<"Numero conto destinatario:"<< numero_conto<<endl;
-            file<<"Importo:"<<import<<"euro"<<endl;
+            file<<"Importo:"<<import<<" euro"<<endl;
             file.close();
         }else{
             cerr<<"Il file non e' stato creato"<<endl;
@@ -28,7 +28,7 @@ void Operazioni_Finanziarie::Versamento(string fonte,double importo) {
     if(importo>0){
         nuovo_saldo=client.getSaldo()+importo;
         client.setSaldo(nuovo_saldo);
-        ofstream file(client.getName()+"_"+client.getSurname()+fonte+"_.txt");
+        ofstream file(client.getName()+"_"+client.getSurname()+"_"+fonte+".txt");
         if(file.is_open()){
             file<<"Versamento sul numero di conto: "<<client.getConto()<<"cliente "<<client.getName()<<" "<<client.getSurname()<<endl;
             file<<"Importo versato : "<<importo<<endl;

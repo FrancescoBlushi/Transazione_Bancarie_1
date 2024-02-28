@@ -17,7 +17,7 @@ void Client::creaFile() const {
 
 }
 
-void Client::readFile(string &nomeFile) const {
+void Client::readFile(string nomeFile) const {
     {
         ifstream file(nomeFile);
         if(file.is_open()){
