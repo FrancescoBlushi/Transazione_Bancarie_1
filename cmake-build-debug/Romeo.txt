@@ -1,0 +1,5 @@
+Eseguito Bonifico
+Mittente: GabrieleD'Annunzio
+Destinatario:Romeo
+Numero conto destinatario:500030
+Importo:500euro

@@ -1,0 +1,5 @@
+Eseguito Bonifico
+Mittente: GabrieleD'Annunzio
+Destinatario:Andrea
+Numero conto destinatario:653266
+Importo:1000euro

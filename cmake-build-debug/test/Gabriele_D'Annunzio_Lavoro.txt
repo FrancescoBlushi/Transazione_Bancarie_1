@@ -1,0 +1,3 @@
+Versamento sul numero di conto: 306655cliente Gabriele D'Annunzio
+Importo versato : 1000
+Nuovo Saldo dopo versamento: 4000

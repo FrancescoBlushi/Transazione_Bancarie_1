@@ -1,0 +1,5 @@
+Nome : Nome
+Cognome : Cognome
+Eta: 18
+Numero conto: 0
+Saldo: 0
